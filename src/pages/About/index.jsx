@@ -12,10 +12,15 @@ const About = () => {
            <Nav  className="first:bg-green-500" />
         </div>
 
+
+             </div>
       </div>
   
       </>
     
+          </div>
+        </div>
+        </div> */}
 
      
     </PageContainer>
