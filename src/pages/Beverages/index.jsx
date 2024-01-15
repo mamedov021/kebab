@@ -1,8 +1,16 @@
-
+import Nav from "../../companents/Nav";
+import PageContainer from "../../companents/PageContainer";
 const Baverages = () => {
     return (
-       <>
-       this is baverages page
+       <>       
+        <PageContainer>
+
+       <Nav/>
+         this is baverages page
+       </PageContainer>
+
+      
+        
        </>
     );
   };

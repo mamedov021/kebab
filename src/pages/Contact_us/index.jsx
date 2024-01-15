@@ -1,5 +1,17 @@
+import Nav from "../../companents/Nav";
+import PageContainer from "../../companents/Pagecontainer";
 const Contact = () => {
-  return <>this is Contact page</>;
+
+return (
+<>
+<PageContainer>
+
+<Nav/>
+
+this is Contact page
+</PageContainer>
+</>
+)
 };
 
 export default Contact;
