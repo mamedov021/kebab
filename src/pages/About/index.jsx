@@ -48,8 +48,9 @@ const About = () => {
         <hr className="w-[50%] h-[3px] bg-green-700"/>
       </div>
       
-      <div className=" relative mb-[800px]">
-        <div className=" bg-green-600 h-[360px]   "></div>
+      <div className=" relative mb-[800px]  flex  justify-center">
+        <img src="/bg.png"  alt="" className=" w-full"/>
+       
         <Cards className="absolute"/>
        
 

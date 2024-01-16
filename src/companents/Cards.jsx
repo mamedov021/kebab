@@ -16,10 +16,10 @@ const Cards = () => {
 
   console.log(state);
   return (
-    <div className="cards absolute mt-[50px] z-1  grid-rows-3  top-0  w-full">
+    <div className="cards absolute mt-[50px] z-1 grid  grid-cols-3 top-0  gap-[10%] w-[10/12] ">
       {state.map((item) => {
         return (
-          <div className="card w-[20%]  bg-white" key={item.id}>
+          <div className="card    bg-white" key={item.id}>
             <div className="relative">
               <img src={item.img} />
 
