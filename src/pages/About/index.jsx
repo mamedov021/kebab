@@ -3,33 +3,21 @@ import Nav from "../../companents/Nav";
 import Map from "../../companents/Map";
 import Delivery_companent from "../../companents/Delivery_companent";
 import Cards from "../../companents/Cards";
- 
- 
+import Bbq from "../../companents/bbq"; 
 import MySwiper from "../../companents/swiper";
-import  { useState, useEffect } from 'react';
-import axios from 'axios';
+
 
 
 
 const About = () => {
-   const [state, setState] = useState([]);
 
-   useEffect(() => {
-     axios.get('http://localhost:3000/about')
-       .then(response => {
-         setState(response.data[0]);
-       })
-       .catch(error => {
-         console.error(error);
-       });
-   }, []);
   return (
     <>
     <PageContainer >
      
     
       <div className=" container_1">
-        <h1 className='text-7xl font-extrabold text-neutral-950 tracking-widest w-full flex justify-center my-[50px]'>Taste the Original <span className='text-green-700'>KEBAB</span> </h1>
+        <h1 className='text-xl font-extrabold text-neutral-950 tracking-widest w-full flex justify-center my-[50px] md:text-7xl sm:text-4xl'>Taste the Original <span className='text-green-700'>KEBAB</span> </h1>
         <div className='relative flex items-center justify-center'>  
           <img src="/main.png" alt="" className=' h-[90vh] ' />
           <div className='absolute     w-[80%]'>
@@ -38,27 +26,21 @@ const About = () => {
 
       </div>
       </div>
-      <div className=' container_2 flex flex-col justify-center items-center gap-[20px] my-[150px]'>
-                     
-        <h2>{state.name}</h2>
-        <hr className="w-[50%] h-[3px] bg-green-700"/>
-        <p className=' w-[60%] text-center'> {state.info1} </p>
-        <p className=' w-[60%] text-center'> {state.info2} </p>
-        <p className=' w-[60%] text-center'> {state.info3} </p>
-        <hr className="w-[50%] h-[3px] bg-green-700"/>
+      <div className='relative  w-full flex justify-center my-[50px]' >
+        <img src="/bbq_bg.png" className=' absolute h-full w-full object-cover'  alt="" />
+        <Bbq /> 
       </div>
       
-      <div className=" relative mb-[800px]  flex  justify-center">
-        <img src="/bg.png"  alt="" className=" w-full"/>
+      <div className=" relative    flex  justify-center">
+        <img src="/bg.png"  alt="" className="absolute  w-full  z-[-1] "/>
        
-        <Cards className="absolute"/>
+        <Cards propName="lorem"/>
        
 
       </div>
     <MySwiper />
     <Delivery_companent/>
-    <Map/>
- 
+    <Map/> 
     </PageContainer>
       </>
     

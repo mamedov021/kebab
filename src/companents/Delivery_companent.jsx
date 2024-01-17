@@ -15,7 +15,7 @@ const Delivery = () => {
  }, []);
   return (
     <div className=" flex flex-col justify-center items-center my-[50px]">
-        <h1 className="text-center">{delivery.name}</h1>
+        <h1 className="text-center font-bold">{delivery.name}</h1>
         <hr className="w-[50%] h-[2px] bg-green-700 my-[30px]" />
         <p className="text-center w-[60%]" >{delivery.delivery_info}</p>
         <div className="flex  justify-around my-[50px]">

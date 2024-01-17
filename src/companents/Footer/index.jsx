@@ -2,9 +2,9 @@
 import { FaRegCopyright } from "react-icons/fa6";
 const Footer = () => {
   return(
-  <footer className="bg-black w-full   text-white px-[70px] mt-[50px]">
-   <div className="flex items-start pt-[50px] justify-beatween h-[150px] gap-[8%]">
-    <div > <img src="/footer_logo.png" alt="" /></div>
+  <footer className="bg-black w-full   text-white px-[70px] relative top-[-45px]  py-[45px]  z-[-1]">
+   <div className="flex items-start pt-[50px] justify-beatween h-[150px] gap-[8%] ">
+     <img src="/footer_logo.png" alt=""  /> 
     <div> <h3 className="text-gray-600 font-semibold	">Get in touch</h3>
           <a href="mailto:info@bbq&kebab.com">info@bbq&kebab.com</a>
           <a href="tel:+6494461709"> +1 (816) 482 1513</a>

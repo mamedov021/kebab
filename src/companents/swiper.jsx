@@ -9,7 +9,7 @@ import { Pagination } from "swiper/modules";
 
 export default function MySwiper() {
   return (
-    <div className="bg-slate-200  ">
+    <div className="bg-slate-200 py-[10px] ">
       <div className="text-center my-[80px]  ">
         <h1 className=" font-bold text-2xl">Beverages</h1>
         <p className="text-slate-500">
