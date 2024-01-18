@@ -1,3 +1,4 @@
+import Mobile from "../../companents/Mobile";
 import Nav from "../../companents/Nav";
 import PageContainer from "../../companents/PageContainer";
 const Baverages = () => {
@@ -8,6 +9,7 @@ const Baverages = () => {
        <Nav/>
          this is baverages page
        </PageContainer>
+       <Mobile/>
 
       
         

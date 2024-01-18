@@ -9,14 +9,18 @@ import MySwiper from "../../companents/swiper";
 
 
 
+
 const About = () => {
+  
+
 
   return (
     <>
     <PageContainer >
-     
-    
+   
       <div className=" container_1">
+     
+      
         <h1 className='text-xl font-extrabold text-neutral-950 tracking-widest w-full flex justify-center my-[50px] md:text-7xl sm:text-4xl'>Taste the Original <span className='text-green-700'>KEBAB</span> </h1>
         <div className='relative flex items-center justify-center'>  
           <img src="/main.png" alt="" className=' h-[90vh] ' />
