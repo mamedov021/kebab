@@ -15,12 +15,12 @@ const Cards = ({ propName }) => {
       });
   }, []);
 
-  console.log(state);
+  // console.log(state);
   return (
-    <div className="cards my-[70px] z-1 grid  top-0  gap-[30px] w-10/12  grid-cols-1 sm:grid-cols-2 md:grid-cols-2  xl:grid-cols-3 gap-4  ">
+    <div className="cards my-[70px] z-1 grid  top-0  gap-[30px] w-10/12  grid-cols-1 sm:grid-cols-2 md:grid-cols-2  xl:grid-cols-3 gap-4  " key="0">
       {state.map((item) => {
         return (
-          <div className="card bg-white  drop-shadow	" key={item.id}>
+          <div className="card bg-white  drop-shadow" key={item.id}>
             <div className="relative">
               <img src={item.img} className="w-full"/>
 

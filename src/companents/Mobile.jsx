@@ -1,8 +1,12 @@
 import { NavLink } from "react-router-dom";
- 
-const Mobile = () => {
+
+
+
+const Mobile = ({menuOpen}) => {
     return (
-        <nav className="bg-gray-700 text-black  flex flex-col justify-around  items-center    ">
+        <nav className={`${
+          menuOpen ? "right-0" : "-right-full"
+        }  bg-white fixed flex flex-col justify-around items-center  top-0 h-full shadow-2xl w-full transition-all duration-500 z-20 px-4  bg-gray-700 text-black gap-[25px] py-[25px]  `}>
           <NavLink
             className={({ isActive }) =>
               `${isActive ? "bg-green-700 px-[25px] py-[5px] text-white rounded-[25px]" : ""} text-xl`

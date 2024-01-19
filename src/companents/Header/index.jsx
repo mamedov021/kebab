@@ -11,11 +11,11 @@ const Header = () => {
 <main className="flex justify-center  mt-5  ">
   <div className="w-10/12">
     <div onClick={handleOpen}  className=" hidden max-[768px]:flex justify-end cursor-pointer" >
-      {menuOpen?<IoMdClose/> :<GiHamburgerMenu  /> }
+      {menuOpen?<IoMdClose className="text-[25px] text-green-700 z-[25]"/> :<GiHamburgerMenu className="text-[25px] text-green-700" /> }
       
     </div>
 <div className=" hidden max-[768px]:block">
-  {menuOpen?<Mobile/>:""}
+  {<Mobile menuOpen={menuOpen}  />}
    
 </div>
     <header className="flex justify-between items-center max-[768px]:block ">
