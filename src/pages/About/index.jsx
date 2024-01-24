@@ -3,7 +3,7 @@ import Nav from "../../companents/Nav";
 import Map from "../../companents/Map";
 import Delivery_companent from "../../companents/Delivery_companent";
 import Cards from "../../companents/Cards";
-import Bbq from "../../companents/bbq";
+import Bbq from "../../companents/Bbq";
 import MySwiper from "../../companents/swiper";
 
 const About = () => {
