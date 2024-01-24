@@ -5,7 +5,7 @@ const Bbq = () => {
     const [state, setState] = useState([]);
 
     useEffect(() => {
-      axios.get('http://localhost:3000/about')
+      axios.get('https://db-kebab.vercel.app/about')
         .then(response => {
           setState(response.data[0]);
         })

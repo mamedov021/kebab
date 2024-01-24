@@ -6,7 +6,7 @@ const Cards = ({ propName }) => {
   const [state, setState] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:3000/cards")
+      .get("https://db-kebab.vercel.app/cards")
       .then((res) => {
         setState(res.data);
       })

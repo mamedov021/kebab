@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 const Delivery = () => {
  const [delivery, setDelivery]= useState([]);
  useEffect (()=>{
-    axios.get('http://localhost:3000/delivery')
+    axios.get('https://db-kebab.vercel.app/delivery')
     .then( res=>{
         setDelivery(res.data[0]);
     })
@@ -38,12 +38,7 @@ const Delivery = () => {
              </div>
 
   </div>
-</div>
-
-
-            
-           
-
+</div> 
           </div>
         ) )}
 
