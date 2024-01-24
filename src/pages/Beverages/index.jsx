@@ -1,6 +1,6 @@
 import Mobile from "../../companents/Mobile";
 import Nav from "../../companents/Nav";
-import PageContainer from "../../companents/PageContainer";
+import PageContainer from "../../companents/Pagecontainer";
 const Baverages = () => {
     return (
        <>       
