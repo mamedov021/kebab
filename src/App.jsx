@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom"
-import WebRouting from "./routing"
+import WebRouting from "./Routing"
 
 
 function App() {
